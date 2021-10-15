@@ -1,0 +1,42 @@
+:root{
+    --mainFont: 'Open Sans', sans-serif;
+    --blue: rgb(22, 54, 90);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--mainFont);
+}
+
+h1{
+    font-size: 6vmin;
+    color: var(--blue);
+}
+
+h3{
+    font-size: 3vmin;
+    color: var(--blue);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+button{
+    font-family: var(--mainFont);
+    cursor: pointer;
+    border: none;
+    background: orange;
+    border-radius: 3px;
+    color: white;
+}

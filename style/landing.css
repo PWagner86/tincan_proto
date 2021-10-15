@@ -1,0 +1,175 @@
+header{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    padding: 0 2rem;
+}
+
+header nav{
+    width: 50%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3vmin;
+    color: var(--blue);
+}
+
+.admin{
+    cursor: pointer;
+}
+
+.carussell-wrapper{
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carussell-wrapper i{
+    font-size: 8vmin;
+    color: var(--blue);
+}
+
+.carussell{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carussell .board{
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carussell .board img{
+    height: 50%;
+}
+
+.carussell .b2 img{
+    height: 80%;
+}
+
+main{
+    height: 50vh;
+    display: flex;
+}
+
+.main-board-wrapper,
+.info-wrapper{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-board-wrapper h3{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-board-wrapper .main-board{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-board img{
+    height: 90%;
+}
+
+.main-board-wrapper a{
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: orange;
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.info-wrapper{
+    justify-content: center;
+    align-items: center;
+}
+
+.info-wrapper iframe{
+    height: 90%;
+    width: 90%;
+}
+
+.login{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 40%;
+    height: 50%;
+    background: orange;
+    border-radius: 3px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login label,
+.login .submit{
+    width: 90%;
+    height: 33.3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vmax;
+    color: white;
+}
+
+.login label input{
+    width: 80%;
+    height: 30%;
+    font-family: var(--mainFont);
+    font-size: 1rem;
+}
+
+.submit a{
+    width: 100%;
+    height: 30%;
+    border-radius: 3px;
+    border: solid 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .carussell-wrapper .carussell .b1,
+    .carussell-wrapper .carussell .b3{
+        display: none;
+    }
+
+    .login{
+        width: 80%;
+    }
+}

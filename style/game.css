@@ -1,0 +1,114 @@
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    padding: 0 2rem;
+}
+
+header a{
+    font-size: 3vmin;
+    padding: 0 2rem;
+}
+
+.game-wrapper{
+    height: 80vh;
+    display: flex;
+}
+
+.board,
+.form{
+    height: 100%;
+    width: 50%;
+}
+
+.board h3{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board .pic-wrapper{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-wrapper img{
+    height: 90%;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vmin;
+    box-shadow: 0 0 30px black;
+    border-radius: 3px;
+}
+
+.form form h3,
+.form form label,
+.form form .submit{
+    width: 80%;
+    height: 16.6%;
+}
+
+.form form h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form form label input{
+    width: 80%;
+    height: 50%;
+    font-family: var(--mainFont);
+    font-size: 3vmin;
+}
+
+.form form .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit button{
+    width: 100%;
+    height: 50%;
+    font-size: 3vmin;
+}
+
+@media screen and (max-width: 1000px ) {
+   .game-wrapper{
+       flex-direction: column;
+   }
+
+   .board,
+   .form{
+       height: 50%;
+       width: 100%;
+   }
+}

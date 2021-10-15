@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/admin.css">
+    <script src="../code/admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <a href="../index.html">Logout</a>
+    </header>
+
+    <article>
+        <div class="teilnehmer">
+            <div class="input">
+                <input type="text" name="date" id="date" placeholder="z.B. 15.10.2021">
+                <button>Teilnehmer anzeigen</button>
+            </div>
+            <ul class="tl-list">
+            </ul>
+        </div>
+        <div class="board-edit">
+            <form>
+                <label for="pic">
+                    Bild:
+                    <input type="file" name="pic">
+                </label>
+                <label for="title">
+                    Titel:
+                    <input type="text" name="title">
+                </label>
+                <div class="submit">
+                    <button>Fertig</button>
+                </div>
+            </form>
+        </div>
+        <div class="winner">
+            <button>Gewinner anzeigen</button>
+            <h3></h3>
+        </div>
+    </article>
+    
+</body>
+</html>

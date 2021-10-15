@@ -1,0 +1,135 @@
+header{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    padding: 0 2rem;
+}
+
+header a{
+    padding: 0 2rem;
+    font-size: 3vmin;
+}
+
+article{
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teilnehmer{
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    position: relative;
+}
+
+.input{
+    position: sticky;
+    background: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input input{
+    width: 60%;
+    height: 50%;
+    font-size: 3vmin;
+    padding: 0 1rem;
+    font-family: var(--mainFont);
+}
+
+.input button{
+    width: 30%;
+    height: 60%;
+    font-size: 2.5vmin;
+}
+
+.tl-list{
+    width: 100%;
+    height: 70%;
+}
+
+.tl-list li{
+    width: 80%;
+    padding: 1rem;
+    font-size: 3vmin;
+}
+
+.board-edit{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-edit form{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 0 50px black;
+}
+
+form label,
+form .submit{
+    height: 33.3%;
+    width: 90%;
+    font-size: 3vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form label input{
+    width: 70%;
+    height: 50%;
+    font-family: var(--mainFont);
+}
+
+form .submit button{
+    width: 100%;
+    height: 50%;
+    font-size: 3vmin;
+}
+
+.winner{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.winner button{
+    width: 40%;
+    height: 20%;
+    font-size: 3vmin;
+}
+
+@media screen and (max-width: 750px){
+    article{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teilnehmer,
+    .board-edit,
+    .winner{
+        width: 100%;
+        height: 33.3%;
+    }
+}
